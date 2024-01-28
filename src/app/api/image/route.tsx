@@ -4,6 +4,8 @@ import sharp from "sharp";
 import { join } from "path";
 import * as fs from "fs";
 
+export const dynamic = "force-dynamic";
+
 const interPath = join(process.cwd(), "public/Inter-Regular.ttf");
 let inter = fs.readFileSync(interPath);
 
