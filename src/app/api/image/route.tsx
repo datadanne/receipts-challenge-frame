@@ -64,7 +64,7 @@ export async function GET() {
           }}
         >
           <span>Challenge 001</span>
-          <span>Time remaining: {Math.ceil(hoursLeft)} hours</span>
+          <span>Time remaining: {Math.round(hoursLeft)} hours</span>
         </div>
         <img src="https://leaderboard.receipts.xyz/1000_miles_challenge_banner.png" />
         <div
