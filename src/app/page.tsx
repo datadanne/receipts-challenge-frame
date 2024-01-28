@@ -19,8 +19,6 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default function Home() {
-  const imageUrl = `${process.env["HOST"]}/api/image`;
-
   return (
     <main className="flex min-h-screen flex-col items-center align-center p-8 text-[#aaa] text-center gap-4">
       <p>
@@ -44,8 +42,6 @@ export default function Home() {
           datadanne.eth
         </a>
       </p>
-
-      <img src={imageUrl} />
     </main>
   );
 }
