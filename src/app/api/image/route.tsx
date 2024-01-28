@@ -34,6 +34,7 @@ export async function GET() {
         color: "white",
         height: "100%",
         width: "100%",
+        padding: "5%",
       }}
     >
       <div
@@ -81,8 +82,8 @@ export async function GET() {
       </div>
     </div>,
     {
-      width: 416,
-      height: 217.80,
+      width: 417,
+      height: 239.58,
       fonts: [
         {
           name: "Inter",
