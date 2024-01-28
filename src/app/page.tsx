@@ -13,7 +13,6 @@ export async function generateMetadata(): Promise<Metadata> {
     other: {
       "fc:frame": "vNext",
       "fc:frame:image": imageUrl,
-      "fc:frame:button:1": "Start",
       "fc:frame:refresh_period": 60,
     },
   };
