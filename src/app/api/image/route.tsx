@@ -30,45 +30,59 @@ export async function GET() {
         alignItems: "center",
         display: "flex",
         flexDirection: "column",
-        width: "100%",
-        height: "100%",
-        backgroundColor: "black",
+        backgroundColor: "white",
         color: "white",
-        textTransform: "uppercase",
-        fontSize: "14px",
-        borderRadius: "10px",
+        height: "100%",
+        width: "100%",
       }}
     >
       <div
         style={{
+          justifyContent: "center",
+          alignItems: "center",
           display: "flex",
+          flexDirection: "column",
           width: "100%",
-          flexDirection: "row",
-          alignItems: "center",
-          justifyContent: "space-between",
-          paddingLeft: "15px",
-          paddingRight: "15px",
-          flexGrow: 1,
+          backgroundColor: "black",
+          color: "white",
+          textTransform: "uppercase",
+          fontSize: "14px",
+          borderRadius: "10px",
         }}
       >
-        <span>Challenge 001</span>
-        <span>Time remaining: {Math.ceil(hoursLeft)} hours</span>
-      </div>
-      <img src="https://leaderboard.receipts.xyz/1000_miles_challenge_banner.png" />
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          flexGrow: 1,
-          alignItems: "center",
-        }}
-      >
-        <span>{data.total_miles} miles completed</span>
+        <div
+          style={{
+            display: "flex",
+            width: "100%",
+            flexDirection: "row",
+            alignItems: "center",
+            justifyContent: "space-between",
+            paddingLeft: "15px",
+            paddingRight: "15px",
+            paddingTop: "2px",
+            paddingBottom: "1px",
+          }}
+        >
+          <span>Challenge 001</span>
+          <span>Time remaining: {Math.ceil(hoursLeft)} hours</span>
+        </div>
+        <img src="https://leaderboard.receipts.xyz/1000_miles_challenge_banner.png" />
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+            paddingTop: "1px",
+            paddingBottom: "2px",
+          }}
+        >
+          <span>{data.total_miles} miles completed</span>
+        </div>
       </div>
     </div>,
     {
       width: 416,
-      height: 180.78,
+      height: 217.80,
       fonts: [
         {
           name: "Inter",
@@ -89,7 +103,6 @@ export async function GET() {
     status: 200,
     headers: {
       "Content-Type": "image/png",
-      "Cache-Control": "max-age=60",
     },
   });
 }
